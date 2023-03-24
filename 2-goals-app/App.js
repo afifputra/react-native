@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, Button } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 
 export default function App() {
   return (
@@ -6,7 +6,16 @@ export default function App() {
       <View>
         <Text>Another piece of text!</Text>
       </View>
-      <Text>Hello World!</Text>
+      <Text
+        style={{
+          margin: 16,
+          borderColor: "black",
+          borderWidth: 1,
+          padding: 8,
+        }}
+      >
+        Hello World!
+      </Text>
       <Button title="Click me!" color={"red"} />
     </View>
   );
